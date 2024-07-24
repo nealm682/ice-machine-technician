@@ -61,10 +61,10 @@ def generate_response(query, documents, api_key):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=messages,
-        max_tokens=150,
+        max_tokens=250,
         n=1,
         stop=None,
-        temperature=0.7
+        temperature=0.4
     )
     
     return response.choices[0].message['content'].strip()
