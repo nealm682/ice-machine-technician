@@ -27,7 +27,7 @@ for msg in st.session_state.messages:
 # Function to get embedding from OpenAI
 def get_embedding(text, api_key):
     openai.api_key = api_key
-    response = openai.Embedding.create(model="text-embedding-ada-002", input=[text])
+    response = openai.Embedding.create(model="text-embedding-ada-002", input=text)
     return np.array(response['data'][0]['embedding'])
 
 # Function to search FAISS index
@@ -67,7 +67,7 @@ def generate_response(query, documents, api_key):
         temperature=0.7
     )
     
-    return response.choices[0]['message']['content'].strip()
+    return response.choices[0].message['content'].strip()
 
 # User input
 if prompt := st.chat_input():
