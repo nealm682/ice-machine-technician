@@ -2,6 +2,8 @@
 
 This Streamlit application leverages OpenAI's GPT-3.5 and FAISS to provide a chatbot that can answer questions about the Manitowoc Indigo NXT commercial ice machine. The bot uses embeddings to search for relevant information in a pre-built FAISS index and generates accurate responses based on the documents.
 
+https://ice-machine-technician-iqrapprnxetp5khifu73wwh.streamlit.app/
+
 ## Features
 
 - **User Authentication**: Users can input their OpenAI API key to use the application.
