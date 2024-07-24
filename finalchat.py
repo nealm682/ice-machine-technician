@@ -12,7 +12,7 @@ with open('metadata_store.json', 'r') as f:
 # Sidebar for API key input
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
-    "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
+    st.markdown("[Get an OpenAI API key](https://platform.openai.com/account/api-keys)")
 
 st.title("💬 Neal's Ice Machine Technician")
 
