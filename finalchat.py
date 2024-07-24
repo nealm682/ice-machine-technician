@@ -29,7 +29,7 @@ if prompt := st.chat_input():
     
     # Send user prompt to backend and get response
     try:
-        response = requests.post('http://127.0.0.1:5000/chat', json={'query': prompt, 'api_key': openai_api_key})
+        response = requests.post('https://api.render.com/deploy/srv-cqglv2aj1k6c73dg3560?key=bp_YgkE5uks', json={'query': prompt, 'api_key': openai_api_key})
         response.raise_for_status()  # Raise an error for bad status codes
         response_data = response.json()
         bot_response = response_data.get('response', 'No response from server.')
