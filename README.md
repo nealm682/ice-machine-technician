@@ -1,4 +1,4 @@
-# 💬 Neal's Ice Machine Technician
+# 💬 Neal's Ice Machine Technician using RAG Methodology
 
 This Streamlit application leverages OpenAI's GPT-3.5 and FAISS to provide a chatbot that can answer questions about the Manitowoc Indigo NXT commercial ice machine. The bot uses embeddings to search for relevant information in a pre-built FAISS index and generates accurate responses based on the documents.
 
